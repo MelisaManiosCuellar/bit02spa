@@ -29,9 +29,9 @@ function Home() {
       <input
         type="text"
         placeholder='Search a product'
-        className='rounded-lg border border-black w-80 p-4 mb-10 focus:outline-none'
+        className='rounded-lg border-double border-4 border-indigo-600 w-1/4  p-2 mb-10 focus:outline-none '
         onChange={(event) => context.setSearchByTitle(event.target.value)} />
-      <div className='grid gap-4 grid-cols-4 w-full max-w-screen-lg'>
+      <div className='grid gap-24 grid-cols-4 w-full max-w-screen-xl '>
         {renderView()}
       </div>
       <ProductDetail />

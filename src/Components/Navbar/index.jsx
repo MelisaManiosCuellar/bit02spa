@@ -8,14 +8,14 @@ const Navbar = () => {
   const activeStyle = 'underline underline-offset-4'
 
   return (
-    <nav className='flex justify-between items-center fixed z-10 top-0 w-full py-5 px-8 text-xl font-light'>
+    <nav className='flex justify-between items-center text-emerald-500 hover:text-pink-500 fixed z-10 top-0 w-full py-5 px-8 text-xl font-light'>
       <ul className='flex items-center gap-8'>
         <li className='font-semibold text-lg '>
           <NavLink to='/'>
-            Shopi
+            Sakura Store
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/'
             onClick={() => context.setSearchByCategory()}
@@ -25,7 +25,7 @@ const Navbar = () => {
             All
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/clothes'
             onClick={() => context.setSearchByCategory('clothes')}
@@ -35,17 +35,17 @@ const Navbar = () => {
             Clothes
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/electronics'
             onClick={() => context.setSearchByCategory('electronics')}
-            className={({ isActive }) =>
+            className= {({ isActive }) =>
               isActive ? activeStyle : undefined
             }>
             Electronics
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/others'
             onClick={() => context.setSearchByCategory('others')}
@@ -56,11 +56,11 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <ul className='flex items-center gap-3'>
-        <li className='text-black/60'>
+      <ul className='flex items-center gap-8'>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           Melisa Manios
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/my-orders'
             className={({ isActive }) =>
@@ -69,7 +69,7 @@ const Navbar = () => {
             My Orders
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/my-account'
             className={({ isActive }) =>
@@ -78,7 +78,7 @@ const Navbar = () => {
             My Account
           </NavLink>
         </li>
-        <li>
+        <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
             to='/sing-in'
             className={({ isActive }) =>
@@ -88,7 +88,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className='flex items-center'>
-          <ShoppingBagIcon className='h-6 w-6 text-black'></ShoppingBagIcon>
+          <ShoppingBagIcon className='h-6 w-6 text-cyan-400 hover:text-violet-400'></ShoppingBagIcon>
           <div>{context.cartProducts.length}</div>
         </li>
       </ul>
