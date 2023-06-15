@@ -27,12 +27,12 @@ const Navbar = () => {
         </li>
         <li className=' font-semibold text-violet-500  hover:text-cyan-400'>
           <NavLink
-            to='/clothes'
-            onClick={() => context.setSearchByCategory('clothes')}
+            to='/Control'
+            onClick={() => context.setSearchByCategory('Control')}
             className={({ isActive }) =>
               isActive ? activeStyle : undefined
             }>
-            Clothes
+            panelControl
           </NavLink>
         </li>
         <li className=' font-semibold text-violet-500  hover:text-cyan-400'>

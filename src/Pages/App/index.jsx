@@ -7,13 +7,14 @@ import MyOrders from '../MyOrders'
 import NotFound from '../NotFound'
 import SignIn from '../SignIn'
 import Navbar from '../../Components/Navbar'
+import PanelControl from '../../Components/PanelControl'
 import CheckoutSideMenu from '../../Components/CheckoutSideMenu'
 import './App.css'
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: '/', element: <Home /> },
-    { path: '/clothes', element: <Home /> },
+    { path: '/control', element: <PanelControl /> },
     { path: '/electronics', element: <Home /> },
     { path: '/furnitures', element: <Home /> },
     { path: '/toys', element: <Home /> },
