@@ -6,6 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import Widget from "../widget/Widget";
 import React, { useEffect, useState } from "react";
 
 
@@ -21,7 +22,13 @@ const PanelControl = () => {
   // console.log(users);
   return (
     <Layout>
-      <div className="bg-red-500">
+      <div className="widgets grid grid-rows-4 grid-flow-col gap-4 m-4">
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
+        </div>
+      <div>
     <TableContainer component={Paper} className="table-auto">
       <Table sx={{ maxWidth: 1366}} aria-label="simple table">
         <TableHead>

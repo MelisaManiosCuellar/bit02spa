@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <Layout>
-      <div className='flex items-center justify-center relative w-80 mb-4 '>
+      <div className='flex items-center justify-center  relative w-80 mb-4 '>
         <h1 className='bg-clip-text font-semibold text-transparent  bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... text-2xl'>Exclusive Products</h1>
       </div>
       <input
